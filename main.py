@@ -49,7 +49,7 @@ def add_parameter_ui(clf_name):
     params = dict()
     if clf_name == "KNN":
         K = st.sidebar.slider("K", 1, 15)
-        leaf_size = st.sidebar.slider("leaf_size", 30, 40)
+        leaf_size = st.sidebar.slider("leaf_size", 30, 45)
         params["K"] = K
         params["leaf_size"] = leaf_size
     elif clf_name == "SVM":
